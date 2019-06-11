@@ -21,7 +21,7 @@ class Song < ActiveRecord::Base
     self.genre ? self.genre.name : nil
   end
 
-  def note_contents=(contents)
+  def note_contents=(content)
     contents.each do |content|
       note = Note.find(content)
       self.notes << content
