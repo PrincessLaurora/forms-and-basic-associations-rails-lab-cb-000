@@ -9,7 +9,7 @@
   <%= f.text_field :artist_name %>
   <br />
 
-  <%= f.collection_select :genre_name, :genre_id, Genre.all, :id, :name %>
+  <%= f.collection_select :genre_name, Genre.all, :id, :name %>
   <br />
 
 
