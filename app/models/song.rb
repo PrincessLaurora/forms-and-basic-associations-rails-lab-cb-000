@@ -9,7 +9,7 @@ class Song < ActiveRecord::Base
   end
 
   def artist_name
-    self.artist? self.artist.name : nil
+    self.artist ? self.artist.name : nil
   end
 
   def genre_name=(name)
@@ -18,11 +18,11 @@ class Song < ActiveRecord::Base
 
 
   def genre_name
-    self.genre? self.genre.name : nil
+    self.genre ? self.genre.name : nil
   end
 
   def note_contents=(content)
-    
+
   end
 
   def note_contents
